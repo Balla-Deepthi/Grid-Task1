@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: rgb(40, 38, 38);
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: 10% 10% 1fr 10% 10%;
+            height: 50vh;
+            width: 70vw;
+            gap: 10px;
+            /* padding: 100px; */
+        }
+        .item1
+        {
+            grid-column: 1/2;
+            background: linear-gradient(45deg, #F6F7C4,#FFA09B,#FF8383,#D76C82 );
+        }
+        .item2
+        {
+            grid-column: 2/4;
+            grid-row: 1/3;
+            background: linear-gradient(45deg, #CDC1FF,#9B7EBD,#e891c1,#F19ED2,#FF70AB);
+        }
+        .item3
+        {
+            grid-column: 4/6;
+            grid-row: 1/2;
+            background: linear-gradient(45deg,#03AED2,#68D2E8,#A3FFD6,#94FFD8 );
+
+        }
+        .item4
+        {
+            grid-column: 1/2;
+            background: linear-gradient(45deg, #F6F7C4,#FFA09B,#FF8383,#D76C82 );
+
+        }
+        .item5
+        {
+            grid-column: 4/6;
+            grid-row: 2/3;
+            background: linear-gradient(45deg,#94FFD8,#A3FFD6,#68D2E8,#68D2E8,#03AED2);
+        }
+        .item6,.item7,.item9,.item10,.item11,.item12,.item13,.item14
+        {
+            background: linear-gradient(45deg, #F6F7C4,#FFA09B,#FF8383,#D76C82 );
+
+        }
+        .item8
+        {
+            grid-column: 3/4;
+            grid-row: 3/5;
+            background: linear-gradient(45deg,#FF70AB,#F19ED2,#e891c1,#9B7EBD,#CDC1FF);
+        }
+        .rhombus
+        {
+            width: 3vh;
+            height: 3vh;
+            background-color: white;
+            border-radius: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(45deg);
+            position: relative;
+            
+        }
+        .rhombus .number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 0.4rem;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="item item1"><div class="rhombus"><span class="number">5</span></div></div>
+            <div class="item item2"><div class="rhombus"><span class="number">1</span></div></div>
+            <div class="item item3"><div class="rhombus"><span class="number">3</span></div></div>
+            <div class="item item4"><div class="rhombus"><span class="number">6</span></div></div>
+            <div class="item item5"><div class="rhombus"><span class="number">5</span></div></div>
+            <div class="item item6"><div class="rhombus"><span class="number">7</span></div></div>
+            <div class="item item7"><div class="rhombus"><span class="number">9</span></div></div>
+            <div class="item item8"><div class="rhombus"><span class="number">2</span></div></div>
+            <div class="item item9"><div class="rhombus"><span class="number">11</span></div></div>
+            <div class="item item10"><div class="rhombus"><span class="number">12</span></div></div>
+            <div class="item item11"><div class="rhombus"><span class="number">8</span></div></div>
+            <div class="item item12"><div class="rhombus"><span class="number">10</span></div></div>
+            <div class="item item13"><div class="rhombus"><span class="number">13</span></div></div>
+            <div class="item item14"><div class="rhombus"><span class="number">14</span></div></div>
+        </div>
+    </div>
+</body>
+</html>

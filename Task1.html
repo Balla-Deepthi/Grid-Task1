@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .head-container
+        {
+            display: flex;
+            height: 100vh;
+            background-color: black;
+            justify-content: center;
+
+        }
+        .container
+        {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+            border: 1px solid white;
+            position: relative;
+            padding: 50px;
+        }
+        
+       
+       
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: repeat(4,20vh);
+            height: 50vh;
+            gap: 10px;
+            
+
+        }
+        .item
+        {
+            border: 1px solid black;
+        }
+        .item1
+        {
+            grid-column: 1/2;
+            grid-row: 1/4;
+            background-color: green;
+        }
+        .item2
+        {
+            grid-column: 2/4;
+            background-color: green;
+        }
+        .item3
+        {
+            background-color: red;
+        }
+        .item4
+        {
+            grid-column: 2/3;
+            background-color: orange;
+        }
+        .item5
+        {
+            background-color: red;
+        }
+        .item6
+        {
+            grid-column: 4/5;
+            grid-row: 2/4;
+            background-color: green;
+        }
+        .item7
+        {
+            background-color: red;
+           
+        }
+        .item8
+        {
+            background-color: orange;
+        }
+        /* .text-container-1
+        {
+            position: absolute;
+            top: 16%;
+            left: 29%;
+            text-align: center;
+        }
+        .text-container-1>hr
+        {
+             border: 1px solid white;
+             width: 85vh;
+            
+        }
+        .text-container-1>p, .text-container-2>p
+        {
+            font-size: 2rem;
+            color: white;
+        }
+        .text-container-2
+        {
+            position: absolute;
+            top: 48%;
+            left: 26%;
+            text-align: center;
+        }
+        .text-container-2>hr
+        {
+             border: 1px solid white;
+             width: 52vh;
+            
+        } */
+        
+       
+    </style>
+</head>
+<body>
+
+    <div class="head-container">
+        <div class="container">
+            <div class="grid-container">
+                <div class="item item1"></div>
+                <div class="item item2"></div>
+                <div class="item item3"></div>
+                <div class="item item4"></div>
+                <div class="item item5"></div>
+                <div class="item item6"></div>
+                <div class="item item7"></div>
+                <div class="item item8"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="text-container-1">
+        <p>grid-template-column(Width)</p>
+             
+        <hr>
+    </div>
+    <div class="text-container-2" style="transform: translate(-50%,-50%) rotate(90deg);">
+        
+             
+        <hr>
+        <p >grid-template-row(Height)</p>
+    </div> -->
+</body>
+</html>

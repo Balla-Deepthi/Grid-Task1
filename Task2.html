@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .container
+        {
+            
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(39, 38, 38);
+            
+           
+            
+        } 
+        .grid-container
+        {
+            display: grid;
+            grid-template-columns: repeat(3,30%);
+            height: 70vh;
+            width: 70vw;
+            gap: 10px;
+            color: white;
+            
+        }
+        .item
+        {
+               border: 6px solid black; 
+               text-align: center;
+               align-content: center;
+
+        }
+        .item1
+        {
+            grid-column: 1/4;
+            background: linear-gradient(to right, #6256CA, #A594F9);
+
+            
+        }
+        .item2
+        {
+            grid-row: 2/4;
+            background: linear-gradient(to right, #41B3A2, #50B498);
+
+        }
+        .item3
+        {
+            grid-column: 2/4;
+            background: linear-gradient(to right, #6256CA, #4158A6, #009FBD );
+
+        }
+        .item4
+        {
+            grid-column: 2/3;
+            background: linear-gradient(to right, #6256CA, #4158A6, #009FBD );
+
+        }
+        .item5
+        {
+            grid-column: 3/4;
+            background: linear-gradient(to right, #6256CA, #4158A6, #009FBD );
+
+        }
+        .item6
+        {
+            grid-column: 1/4;
+            background: linear-gradient(to right, #6256CA, #A594F9);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="head-container">
+        <div class="container">
+            <div class="grid-container">
+                <div class="item item1"><b>header</b></div>
+                <div class="item item2"><b>sidebar</b></div>
+                <div class="item item3"><b>Content-1</b></div>
+                <div class="item item4"><b>Content-1</b></div>
+                <div class="item item5"><b>Content-1</b></div>
+                <div class="item item6"><b>footer</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
